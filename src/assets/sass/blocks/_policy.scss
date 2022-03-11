@@ -1,0 +1,33 @@
+.policy {
+    margin-bottom: 50px;
+    max-width: 890px;
+
+    p {
+        margin-bottom: 25px;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    h2 {
+        margin-bottom: 25px;
+        font-size: 24px;
+        line-height: 1.2;
+        color: $textColorDarken;
+    }
+
+    ul, ol {
+        font-size: 18px;
+    }
+
+    ol {
+        margin-left: 15px;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+}
+
+.policy__item {
+    margin-bottom: 30px;
+}

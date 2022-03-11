@@ -1,0 +1,73 @@
+.burger {
+    // padding: 2px;
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 25px;
+
+    /* sm-размер от 576px до 767px */
+    @media (max-width: 767px) {
+        display: block;
+    }
+
+    &::before, &::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        position: absolute;
+        background-color: #fff;
+        transition: transform .2s ease-in, top .2s linear .2s, bottom .2s linear .2s;
+    }
+
+    &::before {
+        top: 2px;
+    }
+
+    &::after {
+        bottom: 2px;
+    }
+
+    &.active {
+        .burger__center {
+            display: none;
+        }
+
+        &.burger::before {
+            top: calc(50% - 1.5px);
+            transform: rotate(45deg);
+            transition: top .2s linear, bottom .2s linear, transform .2s ease-in .2s;
+            
+        }
+
+        &.burger::after {
+            bottom: calc(50% - 1.5px);
+            transform: rotate(-45deg);
+            transition: top .2s linear, bottom .2s linear, transform .2s ease-in .2s;
+
+        }
+    }
+}
+
+.burger__center {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+
+    // &::before, &::after {
+    //     content: '';
+    //     display: block;
+    //     width: 30px;
+    //     height: 3px;
+    //     position: absolute;
+    //     background-color: #fff;
+    // }
+
+    // &::before {
+    //     top: 2px;
+    // }
+
+    // &::after {
+    //     bottom: 2px;
+    // }
+}

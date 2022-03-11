@@ -1,0 +1,47 @@
+.news {
+    margin: 0 -15px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news__item {
+    margin-bottom: 20px;
+    padding: 0 15px;
+    width: 50%;
+    max-width: 500px;
+
+    /* xs-размер до 575px (включительно) */
+    @media (max-width: 575px) {
+        width: 100%;
+    }
+}
+
+.news__title {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $textColorDarken;
+}
+
+.news__text {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.news__time {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #6E6E6E;
+}
+
+.news--blog {
+    margin-bottom: 0;
+    .news__item {
+        margin-bottom: 45px;
+        width: 100%;
+        max-width: none;
+    }
+}

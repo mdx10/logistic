@@ -1,0 +1,54 @@
+.footer {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    background-image: url(./../img/tire-track.png), url(./../img/tire-track-2.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0 left 0, bottom 0 right 0 ;
+    text-align: center;
+
+    /* md-размер от 768px до 991px */
+    @media (max-width: 991px) {
+        background-size: 30%;
+        background-position: bottom 50% left 0, bottom 50% right 0;
+    }
+
+    /* xs-размер до 575px (включительно) */
+    @media (max-width: 575px) {
+        background-image: none;
+    }
+}
+
+.footer__logo {
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.footer__address {
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5;
+
+    p + p {
+        margin-top: 5px;
+    }
+}
+
+.footer__nav {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.footer__nav-link {
+    display: inline-block;
+    color: $primaryColor;
+    text-decoration: none;
+
+    &:not(:last-child) {
+        margin-right: 15px;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

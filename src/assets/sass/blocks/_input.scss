@@ -1,0 +1,64 @@
+.input {
+    padding: 11px 20px 11px 45px;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+
+    font-size: 16px;
+    line-height: 1.4;
+    color: #fff;
+
+    &::placeholder {
+        color: #fff;
+    }
+
+    &:focus {
+        outline: none;
+        border-bottom-color: #fff;
+    }
+
+    &--user {
+        background-image: url(./../img/person-icon.svg);
+        background-repeat: no-repeat;
+        background-position: top 14px left 15px;
+    }
+
+    &--phone {
+        background-image: url(./../img/call-icon.svg);
+        background-repeat: no-repeat;
+        background-position: top 14px left 15px;
+    }
+
+    &--email {
+        background-image: url(./../img/message-icon.svg);
+        background-repeat: no-repeat;
+        background-position: top 16px left 15px;
+    }
+
+    &--dark {
+        border-bottom: 1px solid #e8e8e8;
+        color: $textColorDarken;
+
+        
+        &.input--user {
+            background-image: url(./../img/person-dark-icon.svg);
+        }
+
+        &.input--phone {
+            background-image: url(./../img/call-black-icon.svg);
+        }
+
+        &.input--email {
+            background-image: url(./../img/mail-icon.svg);
+        }
+
+        &::placeholder {
+        color: $textColorDarken;
+        }
+
+        &:focus {
+            border-bottom-color: #000;
+        }
+    }
+}

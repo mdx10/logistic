@@ -1,0 +1,46 @@
+.section {
+    padding: 60px 0;
+
+    &--map {
+        background-image: url(./../img/dots-map.png);
+        background-repeat: no-repeat;
+        background-position: 20px 145px;
+    }
+
+    /* xs-размер до 575px (включительно) */
+    @media (max-width: 575px) {
+        padding: 30px 0;
+    }
+}
+
+.section__title {
+    margin-bottom: 50px;
+    font-family: $secondFontFamily;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 1.2;
+    color: $textColorDarken;
+
+    span {
+        color: $primaryColor;
+    }
+
+    /* md-размер от 768px до 991px */
+    @media (max-width: 991px) {
+        text-align: center;
+    }
+
+    /* xs-размер до 575px (включительно) */
+    @media (max-width: 575px) {
+        font-size: 38px;
+    }
+}
+
+.section__clients {
+    margin-bottom: 60px;
+}
+
+.section__btn {
+    margin-top: 30px;
+    text-align: center;
+}

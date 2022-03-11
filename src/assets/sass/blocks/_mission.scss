@@ -1,0 +1,88 @@
+.mission-title {
+    text-align: center;
+    font-family: $secondFontFamily;
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.05);
+
+    /* sm-размер от 576px до 767px */
+    @media (max-width: 767px) {
+        font-size: 60px;
+    }
+
+    /* xs-размер до 575px (включительно) */
+    @media (max-width: 575px) {
+        font-size: 40px;
+    }
+}
+
+.mission {
+    margin-top: -22px;
+    padding: 65px 20px;
+    position: relative;
+
+    background: #fff;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+
+    font-family: $secondFontFamily;
+    text-align: center;
+    line-height:1.2;
+
+    &::before, &::after {
+        content: '';
+        display: block;
+        width: 42%;
+        height: 2px;
+
+        position: absolute;
+        bottom: 0;
+    }
+
+    &::before {
+        background-color: $primaryColor;
+        right: 50%;
+    }
+
+    &::after {
+        background-color: #FC2C2B;
+        left: 50%;
+    }
+
+    /* sm-размер от 576px до 767px */
+    @media (max-width: 767px) {
+        margin-top: -12px;
+        padding: 40px 20px;
+    }
+
+    /* xs-размер до 575px (включительно) */
+    @media (max-width: 575px) {
+        margin-top: -10px;
+    }
+}
+
+.mission__title {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: $primaryColor;
+
+    /* sm-размер от 576px до 767px */
+    @media (max-width: 767px) {
+        font-size: 22px;
+    }
+}
+
+.mission__subtitle {
+    font-size: 21px;
+    text-transform: capitalize;
+    color: $textColor;
+
+    /* sm-размер от 576px до 767px */
+    @media (max-width: 767px) {
+        font-size: 16px;
+    }
+}

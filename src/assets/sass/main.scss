@@ -1,0 +1,30 @@
+// Base
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/base";
+
+// Libs
+@import "./lib/slick";
+
+// Blocks
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/burger";
+@import "./blocks/intro";
+@import "./blocks/btn";
+@import "./blocks/input";
+@import "./blocks/form";
+@import "./blocks/contact-form";
+@import "./blocks/section";
+@import "./blocks/services";
+@import "./blocks/clients";
+@import "./blocks/reviews";
+@import "./blocks/benefits";
+@import "./blocks/team";
+@import "./blocks/mission";
+@import "./blocks/news";
+@import "./blocks/blog";
+@import "./blocks/policy";
+@import "./blocks/footer";
+@import "./blocks/modal";
+

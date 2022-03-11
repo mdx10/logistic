@@ -1,0 +1,90 @@
+.reviews {
+    .slick-dots {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            margin: 0 5px;
+        }
+
+        button {
+            display: block;
+            width: 10px;
+            height: 10px;
+
+            background-color: #c4c4c4;
+            border-radius: 50%;
+
+            font-size: 0;
+            color: transparent;
+        }
+
+        .slick-active {
+            button {
+                background-color: $primaryColor;
+                box-shadow: 0 0 0 5px rgba(0, 74, 242, 0.11);
+            }
+        }
+    }
+}
+
+.reviews__item {
+    padding: 0 5px;
+    font-family: $secondFontFamily;
+}
+
+.reviews__header {
+    margin-bottom: 35px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+
+    background-image: url(./../img/lines.svg);
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+.reviews__avatar {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.reviews__header-text {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1.2;
+    color: $textColorDarken;
+}
+
+.reviews__name {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.reviews__company {
+    font-size: 15px;
+}
+
+.reviews__content {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #585858;
+
+    p + p {
+        margin-top: 15px;
+    }
+
+    p:first-child {
+        text-indent: 20px;
+    }
+
+    /* md-размер от 768px до 991px */
+    @media (max-width: 991px) {
+        text-align: center;
+    }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<!-- Title and SEO -->
+		<title>Privacy Policy</title>
+		<meta name="description" content="Описание страницы" />
+		<meta name="keywords" content="ключевые слова, фразы" />
+		
+		<!-- Styles -->
+		<link rel="stylesheet" href="./assets/css/main.min.css" />
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+		
+		<!-- Open Graph -->
+		<!-- <meta property="og:url" content="https://#.ru/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Title" />
+		<meta property="og:description" content="Description" />
+		<meta property="og:image" content="./img/opengraph.jpg"/> -->
+	</head>
+	<body>
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="logo" href="index.html">
+                        <img src="./assets/img/logo.svg" alt="Logo: Center Logistic">
+                    </a>
+                    <nav class="nav" id="nav">
+                        <a href="index.html" class="nav__link">Home Page </a>
+                        <a href="blog.html" class="nav__link">Blog</a>
+                        <a href="policy.html" class="nav__link">Privacy Policy</a>
+                    </nav>
+                    <button class="burger" id="burger-btn">
+                        <div class="burger__center"></div>
+                    </button>
+                </div>
+            </div>
+        </header>
+        
+        <div class="intro intro--policy" id="intro"></div>
+        
+        <section class="section">
+            <div class="container">
+                <h1 class="section__title"><span>Privacy</span> Policy</h1>
+                <div class="policy">
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy).</p>
+                    <div class="policy__item">
+                        <h2>Some subtitle</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, remaining essentially unchanged. It was popularised in the 1960s.</p>
+                        <ul>
+                            <li>- unordered list item</li>
+                            <li>- unordered list item</li>
+                        </ul>
+                    </div>
+                    <div class="policy__item">
+                        <h2>Some subtitle</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                        </p>
+                        <ol>
+                            <li>ordered list item</li>
+                            <li>ordered list item</li>
+                        </ol>
+                    </div>
+                </div>
+                <a href="index.html" class="btn"><span>Back to home</span></a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__logo">
+                    <img src="./assets/img/logo-black.svg" alt="Logo">
+                </div>
+                <address class="footer__address">
+                    <p>New York, Street, ZIP code</p>
+                    <p>Call Us: +9948373123 or E-mail: hello@centerlogistic.com</p>
+                </address>
+                <nav class="footer__nav">
+                    <a href="#" class="footer__nav-link">Terms & Contidions</a>
+                    <a href="policy.html" class="footer__nav-link">Privacy Policy</a>
+                    <a href="blog.html" class="footer__nav-link">Our blog</a>
+                </nav>
+            </div>
+        </footer>
+        <div class="modal" id="requestModal">
+            <div class="modal__inner">
+                <div class="modal__header">
+                    <h4 class="modal__title">Need to deliver your cargo?<br>We can help!</h4>
+                    <p class="modal__subtitle">Fill a little form and we will call you back!</p>
+                </div>
+                <div class="modal__body">
+                    <form action="#" class="form">
+                        <div class="form__group">
+                            <input type="text" class="input  input--dark  input--user" placeholder="Your name">
+                        </div>
+                        <div class="form__group">
+                            <input type="tel" class="input  input--dark  input--phone" placeholder="Your phone">
+                        </div>
+                        <div class="form__group">
+                            <input type="email" class="input  input--dark  input--email" placeholder="Your e-mail">
+                        </div>
+        
+                        <button class="btn  btn--wide"><span>Call me back</span></button>
+                    </form>
+                </div>
+                <div class="modal__footer">
+                    <h5 class="modal__footer-title">Our contacts</h5>
+                    <address class="modal__address">
+                        <p>New York, Street, ZIP code</p>
+                        <p>Phone: <a href="tel:#">+9948373123</a></p>
+                        <p>E-mail: <a href="mailto:#">hello@centerlogistic.com</a></p>
+                    </address>
+                </div>
+                <button class="modal__close" data-modal-close>
+                    <img src="./assets/img/close-icon.svg" alt="close icon">
+                </button>
+            </div>
+        </div>
+        
+        <div class="modal" id="thanksModal">
+            <div class="modal__inner">
+                <div class="modal__header">
+                    <img src="./assets/img/tick-icon.svg" alt="Tick icon" class="modal__icon">
+                    <h4 class="modal__title">Thanks for your request</h4>
+                    <p class="modal__subtitle">We call you back as soon as possible!</p>
+                </div>
+                <div class="modal__footer">
+                    <h5 class="modal__footer-title">Our contacts</h5>
+                    <address class="modal__address">
+                        <p>New York, Street, ZIP code</p>
+                        <p>Phone: <a href="tel:#">+9948373123</a></p>
+                        <p>E-mail: <a href="mailto:#">hello@centerlogistic.com</a></p>
+                    </address>
+                </div>
+                <button class="modal__close" data-modal-close>
+                    <img src="./assets/img/close-icon.svg" alt="close icon">
+                </button>
+            </div>
+        </div>        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./assets/js/main.min.js"></script>
+	</body>
+</html>

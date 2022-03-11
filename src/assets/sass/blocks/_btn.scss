@@ -1,0 +1,41 @@
+.btn {
+    padding: 10px 45px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+
+    background: $btnGradient;
+    border-radius: 5px;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #fff;
+    text-decoration: none;
+
+    span {
+        position: relative;
+        z-index: 2;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        transition: background-color .2s linear;
+    }
+
+    &:hover {
+        &::before {
+            background-color: rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+
+.btn--wide {
+    width: 100%;
+}
